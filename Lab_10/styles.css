@@ -1,0 +1,151 @@
+body {
+    background-color: #191919;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: #D9D3B8;
+    font-family: "Goudy Bookletter 1911", serif;
+}
+header {
+    height: 6vh;
+    text-align: center;
+    background-color: #8437A6;
+}
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: bold;
+    height: inherit;
+}
+.banner {
+    position: relative;
+}
+.banner-image {
+    height: 80vh;
+    background-image: url(dota2banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+}
+.banner-content {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 60px;
+    width: 40vw;
+    text-align: center;
+    background-color: rgba(25,25,25, 0.9);
+    border: rgb(10, 10, 10) solid 10px;
+}
+.main-title {
+    height: 20vh;
+    background-color: #8734BF;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.main-title h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heroes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.hero {
+    width: 150px;
+    height: 150px;
+    border: #5E2D73 solid;
+    position: relative;
+    transition: 1s all;
+    cursor: pointer;
+}
+.hero-image {
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-name {
+    position: absolute;
+    bottom: 5%;
+    width: inherit;
+    text-align: center;
+    font-size: 30px;
+}
+#broodmother .hero-name {
+    font-size: 15px;
+}
+.pudge {
+    background-image: url(Pudge_icon.webp);
+}
+.io {
+    background-image: url(Io_icon.webp);
+}
+.broodmother {
+    background-image: url(Broodmother_icon.webp);
+}
+.description-wrapper {
+    overflow: hidden;
+}
+.description {
+    height: 25vh;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    width: max-content;
+    transition: 1s all;
+}
+.desc-content {
+    width: 100vw;
+}
+.desc-content p {
+    width: 90vw;
+    margin: 0 auto;
+}
+@media (max-width: 480px) {
+    .banner-content {
+        font-size: 8vw;
+        width: 100vw;
+        padding: 5px;
+    }
+
+    .main-title {
+        font-size: 7vw;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-name {
+        font-size: 5vw;
+    }
+
+    .description-wrapper {
+        font-size: 5vw;
+        padding: 5px;
+    }
+
+    .desc-content p {
+        font-size: 4.5vw;
+    }
+    .hero {
+        width: 75px;
+        height: 75px;
+    }
+}
